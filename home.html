@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clickchange(){
+            var para=document.getElementById("para");
+            para.innerHTML="You have successfully changed";
+        }
+        // function change(){
+        //     var game=document.getElementById("game");
+        //     console.log(game.textContent);
+
+            // game.innerHTML="This is Messi";
+        // }
+        function add(){
+            var firstNumber=parseInt(document.getElementById("first").value);
+            var secondNumber=parseInt(document.getElementById("second").value);
+            var sum= firstNumber + secondNumber
+            document.getElementById("result").innerHTML= `${sum} is the total sum`
+
+        }
+
+    </script>
+</head>
+<body>
+     <div>
+        First number: <input type="text" id="first"> <br> <br>
+        Second number: <input type="text" id="second"> <br> <br>
+        <button onclick="add()">Add</button>
+
+        <span id="result">(Here you will see the sum)</span> 
+
+    </div> 
+    <!-- <p id="para">This is me!!</p>
+    <button onclick="clickchange()">
+        Click to change
+    </button>
+    <p id="game">This is Neymar</p>
+    <button onclick="change()">Click to change the player</button> -->
+</body>
+</html>
